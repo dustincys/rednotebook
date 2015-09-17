@@ -54,6 +54,8 @@ CSS = """\
 <style type="text/css">
     body {
         font-family: %(font)s;
+        background: black;
+        color: gray !important;
     }
     <!-- Don't split last line between pages.
          This fix is only supported by Opera -->

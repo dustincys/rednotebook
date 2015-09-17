@@ -43,6 +43,8 @@ class Editor(object):
         self.day_text_view = day_text_view
         self.day_text_buffer = t2t_highlight.get_highlight_buffer()
         self.day_text_view.set_buffer(self.day_text_buffer)
+        self.day_text_view.modify_base(gtk.STATE_NORMAL, gtk.gdk.color_parse('black'))
+        self.day_text_view.modify_text(gtk.STATE_NORMAL, gtk.gdk.color_parse('gray'))
 
         self.undo_redo_manager = undo_redo_manager
 
